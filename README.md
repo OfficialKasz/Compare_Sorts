@@ -1,4 +1,4 @@
-sort
+Compare_Sorts
 ====
 
 Repository of sorting algorithms in C and CUDA.
@@ -9,7 +9,7 @@ Repository of sorting algorithms in C and CUDA.
   1. arrays with totally random elements
   2. arrays already ordered 
   3. arrays ordered in descending order 
-  4. arrays 90% ordered.
+  4. arrays 80% ordered.
 	
 > Sorting methods implemented
   >
