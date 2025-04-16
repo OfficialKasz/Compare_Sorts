@@ -63,7 +63,7 @@ void descending_dataset(int *array, int size){
 
 */
 void almost_ordered_dataset(int *array, int size){
-  int ordered_dataset;
+  int ordered_dataset = size/10 * 8;
   int i;
   for(i = 0; i < ordered_dataset; i++) {
     array[i] = i;
