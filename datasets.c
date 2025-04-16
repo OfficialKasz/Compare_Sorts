@@ -5,71 +5,71 @@
 #include <stdio.h>
 
 /*
-  Function: random_dataset(int *array, int size)
+  Function: random_dataset(int *data, int size)
   Author: Lukasz Janik & Nick Sonntag
 
   Parameter:
-    int* array - Reference to the array that will be filled
+    int* data - Reference to the array that will be filled
     int  size  - Number of elements
 
 */
-void random_dataset(int *array, int size){
+void random_dataset(int *data, int size){
   int i;
   for (i = 0; i < size, i++){
-    array[i] = rand();
+    data[i] = rand();
   }
 }
 
 /*
-  Function: ascending_dataset(int *array, int size)
+  Function: ascending_dataset(int *data, int size)
   Author: Lukasz Janik & Nick Sonntag
 
   Parameter:
-    int* array - Reference to the array that will be filled
+    int* data - Reference to the array that will be filled
     int  size  - Number of elements
 
 */
-void ascending_dataset(int *array, int size){
+void ascending_dataset(int *data, int size){
   int i;
   for(i = 0; i < size; i++) {
-    array[i] = i;
+    data[i] = i;
   }
 }
 
 /*
-  Function: descending_dataset(int *array, int size)
+  Function: descending_dataset(int *data, int size)
   Author: Lukasz Janik & Nick Sonntag
 
   Parameter:
-    int* array - Reference to the array that will be filled
+    int* data - Reference to the array that will be filled
     int  size  - Number of elements
 
 */
-void descending_dataset(int *array, int size){
+void descending_dataset(int *data, int size){
   int i;
   int j;
   for(i = 0, j = size; i < size; i++, j--) {
-    array[i] = j;
+    data[i] = j;
   }
 }
 
 /*
-  Function: almost_ordered_dataset(int *array, int size)
+  Function: almost_ordered_dataset(int *data, int size)
   Author: Lukasz Janik & Nick Sonntag
 
   Parameter:
-    int* array - Reference to the array that will be filled
+    int* data - Reference to the array that will be filled
     int  size  - Number of elements
 
 */
-void almost_ordered_dataset(int *array, int size){
+void almost_ordered_dataset(int *data, int size){
   int ordered_dataset = size/10 * 8;
   int i;
   for(i = 0; i < ordered_dataset; i++) {
-    array[i] = i;
+    data[i] = i;
   }
   for (i = ordered_dataset; i < size, i++){
-    array[i] = rand();
+    data[i] = rand();
   }
 }
 
