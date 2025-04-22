@@ -14,6 +14,6 @@ void descending_dataset(int *data, int size);
 
 void almost_ordered_dataset(int *data, int size);
 
-int* generate_array(int size, int organization);
+int* generate_dataset(int size, int organization);
 
 #endif
