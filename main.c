@@ -31,7 +31,7 @@ int main(int argc, char **argv) {
         vet_aux[i] = vet[i];
     }
     // Sort the array
-    sort_array(vet, size, method);
+    sort_dataset(vet, size, method);
 
     printf("-- Analysis --\n\n");
     printf("Sorting algorithm: %s\n", get_method_name(method));
