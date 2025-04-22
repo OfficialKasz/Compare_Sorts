@@ -110,13 +110,13 @@ char* get_method_name(int method){
 char* get_array_type_name(int type){
     char *name;
     switch(type){
-        case RANDOM_ORDER:
+        case RANDOM:
             name = "Random";
             break;
-        case ASCENDING_ORDER:
+        case ASCENDING:
             name = "Ascending Order";
             break;
-        case DESCENDING_ORDER:
+        case DESCENDING:
             name = "Descending Order";
             break;
         case ALMOST_ORDERED:
