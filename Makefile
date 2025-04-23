@@ -111,19 +111,16 @@ ALL_CCFLAGS += -dc
 
 LIBRARIES += -lcudadevrt
 
-################################################################################
-# This part modified by Eugenio Pacceli Reis da Fonseca
-# DCC/UFMG
-# Target rules
+
 all: app
 
-array.o:array.c
+array.o:datasets.c
 	gcc -o $@ -c $<
 
 gpu_sort.o:cuda_sort.cu
 	$(NVCC) $(INCLUDES) $(ALL_CCFLAGS) $(GENCODE_FLAGS) -o $@ -c $<
 
-sort.o:sort.c
+sort.o:sorting_alg.c
 	gcc -o $@ -c $<
 
 get_opt.o:get_opt.c
